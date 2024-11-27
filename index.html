@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>formulaire de preinscription</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <form id="registration-form">
+                <h1>formulaire de preinscription</h1>
+                <fieldest>
+                    <legend>identifiant</legend>
+                    <label for="genre">genre:</label>
+                    <div>
+                        <input type="radio" id="masculin" name="genre" value="masculin" required>
+                        <label for="masculin">masculin</label>
+                        <input type="radio" id="feminin" name="genre" value="feminin"
+                        <label for="feminin">feminin</label>
+                    </div>
+
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prenom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="date-naissance">Date de naissance:</label>
+                    <input type="date" id="date-naissance" name="date-naissance" required>
+
+                    <label for="lieu-naissance">lieu de naissance:</label>
+                    <input type="text" id="lieu-naissance" name="lieu-naissance" required>
+
+                    <label for="pays">pays de nationalite:</label>
+                    <select id="pays" name="pays" required>
+                        <option value="cameroun">Cameroun</option>
+                        <option value="france">France</option>
+                        <option value="autres">Autres</option>
+                    </select>
+
+                    <label for="region">region d'origine:</label>
+                    <select id="region" name="region" required>
+                        <option value="littoral">Littoral:</option>
+                        <option value="centre">Centres</option>
+                        <option value="nord">Nord</option> 
+                    </select>
+
+                    <label for="departement">Departement:</label>
+                    <input type="text" id="departement" name="departement" required>
+                </fieldest>
+
+                <fieldset>
+                    <legend>Communication et contact</legend>
+                    <label for="langue1">Premiere langue parler:</label>
+                    <select id="langue1" name="langue1" required>
+                        <option value="francais">Francais</option>
+                        <option value="anglais">Anglais</option>
+                    </select>
+
+                    <label for="langue2">Deuxieme langue parler:</label>
+                    <select id="langue2" name="langue2">
+                        <option value="francais">Francais</option>
+                        <option value="anglais">Anglais</option>
+                    </select>
+
+                    <label for="telephone">Numero de telephone:</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <button type="submit">soumettre</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
